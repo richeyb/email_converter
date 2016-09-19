@@ -4,7 +4,8 @@ defmodule EmailConverter do
 
   def run do
     Application.ensure_all_started(:email_converter)
-    convert("7549be57072e983cf34f2a3ac102c187-1")
+    Application.get_env(:email_converter, :api_key)
+    |> convert()
   end
 
   # PRIVATE FUNCTIONS

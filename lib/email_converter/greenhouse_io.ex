@@ -10,7 +10,6 @@ defmodule EmailConverter.GreenhouseIo do
   end
 
   # PRIVATE FUNCTIONS
-  
   defp fetch(id, 3, _) do
     {:error, "Tried 3 times to fetch for #{id}. Giving up!"}
   end

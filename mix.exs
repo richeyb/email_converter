@@ -14,7 +14,7 @@ defmodule EmailConverter.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: [:logger, :httpoison, :poison, :mail]]
+    [applications: [:logger, :httpoison, :poison, :mail, :timex]]
   end
 
   # Dependencies can be Hex packages:
@@ -30,7 +30,8 @@ defmodule EmailConverter.Mixfile do
     [
       { :httpoison, ">= 0.0.0" },
       { :poison, ">= 0.0.0" },
-      { :mail, ">= 0.0.0"}
+      { :mail, ">= 0.0.0" },
+      { :timex, "~> 3.0" }
     ]
   end
 end
